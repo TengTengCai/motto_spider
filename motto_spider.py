@@ -11,6 +11,12 @@ from pymongo import MongoClient, errors
 from requests import ConnectionError as req_ConnectionError, HTTPError, get
 from redis import Redis, ConnectionError as red_ConnectionError, BusyLoadingError, DataError
 
+"""
+该爬虫对格言网网页中数据进行整站URL提取进行爬取数据。
+AUTH：TTC
+DATE：2018年6月2日 09:19:39
+"""
+
 HOST_URL = 'https://www.geyanw.com/'  # 主站地址
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'  # 用户代理
 PROXIES = ['122.114.31.177:808',
